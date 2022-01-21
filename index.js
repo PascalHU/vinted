@@ -1,4 +1,4 @@
-require("dotenv").config;
+require("dotenv").config();
 const express = require("express");
 const formidable = require("express-formidable");
 const mongoose = require("mongoose");
@@ -8,7 +8,7 @@ const cors = require("cors");
 app.use(formidable());
 app.use(cors());
 
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URL);
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
