@@ -8,7 +8,7 @@ const cors = require("cors");
 app.use(formidable());
 app.use(cors());
 
-mongoose.connect(process.env.MONGODB_URL);
+mongoose.connect(process.env.MONGODB_URI);
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
