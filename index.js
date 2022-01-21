@@ -17,7 +17,7 @@ cloudinary.config({
 });
 
 app.get("/", (req, res) => {
-  console.log("Bienvenue sur Vinted");
+  res.json("🤯 Atchoum 🤧🤮");
 });
 const offerRoute = require("./route/offer");
 app.use(offerRoute);
