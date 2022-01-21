@@ -16,6 +16,9 @@ cloudinary.config({
   api_secret: process.env.CLOUD_API_SECRET,
 });
 
+app.get("/", (req, res) => {
+  console.log("Bienvenue sur Vinted");
+});
 const offerRoute = require("./route/offer");
 app.use(offerRoute);
 const userRoute = require("./route/user");
