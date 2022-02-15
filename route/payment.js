@@ -12,7 +12,7 @@ router.post("/payment", async (req, res) => {
       currency: "eur",
       description: `Paiement pour ${req.fields.title}`,
     });
-    console.log(response);
+    console.log(response.status);
     if (response.status === "succeeded") {
       res.status(200).json({ message: "Paiement validé" });
     } else {
